@@ -3,23 +3,23 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background:#000;
+  background: #000;
 }
 
 #fixed-bg {
   position: fixed;
-  left:50%;
-  top:50%;
-  transform:translate(-50%, -50%);
-  width:100vw;
-  height:100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
 }
 
 canvas {
   position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   aspect-ratio: 1;
 }
 
@@ -38,9 +38,36 @@ canvas {
     width: 100%;
     height: auto;
   }
-  
+
   #c2 {
     width: auto;
     height: 100%;
   }
+}
+
+/* Signature: bottom-left, decoration-friendly */
+.signature{
+  position: fixed;
+  left: 16px;
+  bottom: 14px;
+  z-index: 20;
+
+  padding: 10px 12px;
+  border-radius: 14px;
+
+  color: rgba(255,255,255,0.92);
+  font-size: 13px;
+  letter-spacing: 0.2px;
+
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.45),
+    0 0 18px rgba(255,255,255,0.08);
+
+  text-shadow:
+    0 0 12px rgba(255,255,255,0.25);
+
+  user-select: none;
 }
